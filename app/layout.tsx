@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "HouseMD",
   },
+  verification: {
+    google: "google31a09c86311563c6",
+  },
 };
 
 export default function RootLayout({
