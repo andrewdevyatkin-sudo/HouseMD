@@ -232,8 +232,7 @@ export default function ContractorCard({ contractor }: { contractor: Contractor 
           <button
             id={`contact-btn-${contractor.id}`}
             onClick={() => setContactOpen(true)}
-            className="flex-1 py-2.5 rounded-xl text-sm font-bold cursor-pointer"
-            style={{
+           className={`flex-1 py-2.5 rounded-xl text-sm font-bold cursor-pointer${!hasContacted ? " btn-primary" : ""}`}
               border: "none",
               background: hasContacted ? "rgba(59,130,246,0.15)" : undefined,
               color: hasContacted ? "#60a5fa" : undefined,
