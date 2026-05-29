@@ -13,7 +13,8 @@ export type HomeSystem =
   | "Exterior"
   | "Interior"
   | "Landscaping"
-  | "Safety";
+  | "Safety"
+  | "Seasonal";
 
 export interface Guide {
   id: string;
@@ -3164,7 +3165,7 @@ export const costEntries: CostEntry[] = [
 
 // ─── CONTRACTORS ───────────────────────────────────────────────
 
-export const contractors: Contractor[] = [
+export const contractors = [
   // Texas
   { id: "ct1",  name: "Peak Home Services",           specialty: ["Plumbing","HVAC"],                  city: "Austin",          state: "Texas",          stateAbbr: "TX", rating: 4.9, reviewCount: 328, yearsInBusiness: 14, verified: true,  responseTime: "< 2 hours",  priceRange: "$$",  bio: "Family-owned plumbing and HVAC company serving Austin since 2011. All techs are licensed and background checked. We answer our phones.", completedJobs: 2840, tags: ["Licensed","Insured","Free estimates","Weekend availability"] },
   { id: "ct4",  name: "Martinez Foundation Repair",   specialty: ["Foundation"],                       city: "Dallas",          state: "Texas",          stateAbbr: "TX", rating: 4.8, reviewCount: 189, yearsInBusiness: 31, verified: true,  responseTime: "1–2 days",   priceRange: "$$$", bio: "Structural foundation specialists since 1993. Pier and beam, slab, and basement waterproofing. Transferable lifetime warranty.", completedJobs: 4800, tags: ["Lifetime warranty","Structural engineer on staff","Transferable warranty"] },
@@ -4583,7 +4584,7 @@ export const contractors: Contractor[] = [
   { id: "ct1361", name: "All-Season HVAC Wyoming", specialty: ["HVAC", "Plumbing"], city: "Laramie", state: "Wyoming", stateAbbr: "WY", rating: 4.7, reviewCount: 312, yearsInBusiness: 14, verified: true, responseTime: "< 2 hours", priceRange: "$$", bio: "Year-round HVAC and plumbing service throughout Wyoming. Emergency repairs, new equipment installs, and water heater replacement.", completedJobs: 3000, tags: ["Emergency repair", "New install", "Water heater", "Year-round"] },
   { id: "ct1362", name: "Gillette Licensed Electric", specialty: ["Electrical", "Safety"], city: "Gillette", state: "Wyoming", stateAbbr: "WY", rating: 4.7, reviewCount: 334, yearsInBusiness: 15, verified: true, responseTime: "< 2 hours", priceRange: "$$", bio: "Licensed electricians serving Gillette and surrounding Wyoming communities. Panel upgrades, EV chargers, generator hookups, and surge protection.", completedJobs: 3200, tags: ["Panel upgrade", "EV charger", "Generator", "Surge protection"] },
 
-];
+] as Contractor[];
 
 export const homeSystems = [
   { name: "Plumbing", icon: "🔧", description: "Pipes, fixtures, water heaters, drains", guideCount: 48, color: "blue" },
@@ -5786,5 +5787,4 @@ export const qaThreads: QAThread[] = [
     },
   }
 
-];
-
+] as QAThread[]
