@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "HouseMD",
   },
   verification: {
-    google: "google31a09c86311563c6",
+    google: "2LabBQ-MdDYJFxkrI7iZr9CnsBg945BB_hCQm5qKFXA",
   },
 };
 
